@@ -1,3 +1,4 @@
+------------------Find Factorials using Recurssion------------------------
 '''def tri_recursion(k):
     if (k>0):
         result = k+tri_recursion(k-1)
@@ -9,8 +10,9 @@
 print("")
 tri_recursion(6)
 #print(my_function(5))
-#print(my_function'''
+#print(my_function())'''
 
+---------------------Area of circle------------
 '''
 #areaofcircle
 def area_circle(r):
@@ -19,7 +21,7 @@ def area_circle(r):
     
 print(area_circle(6))'''
 '''
-#prime or not
+-------------------------prime or not-------------------
 
 def my_function(x):
     if x==1:
@@ -40,6 +42,8 @@ def my_function(x):
 print(my_function(29))
 
 
+
+
 lis=[1,4,10,12,11,31,77,67]
 prime=[]
 for i in lis:
@@ -51,16 +55,16 @@ for i in lis:
         prime.append(i)
 print(prime)
 
-
+----------------reverse string -------------------------
 
 def rev_fun(X):
-   #return X[::-1]
-   
+   #return X[::-1] # to reverse like mirror image
+     
    word = X.split(' ')
-   reverse_sentence= ' '.join(reversed(word))
+   reverse_sentence= ' '.join(reversed(word)) # to reverse entire sentence
    return reverse_sentence
    
-   
+   -----------------palindrome--------------------
     
 print(rev_fun(" mummy pappa?")) '''
 '''
@@ -74,6 +78,7 @@ my_fun('new string')
 my_fun('asa') '''
 
 '''
+------------------- factorial using recurssion -------------------
 
 def fact_rec(num):
     if num <0:
@@ -86,6 +91,8 @@ def fact_rec(num):
 num=-1
 print("factorial of" , num, "is", fact_rec(num))'''
 '''
+
+------------------square root of list---------------
 import math
 
 def sqr_fun(arr):
@@ -97,13 +104,15 @@ list=[4,8,3,5]
 result = sqr_fun(list)
 print(result)
     
-    
+------------------sqr of num ------------    
     
  def sqr_fun(num):
     return num**2 
     
 
 print(sqr_fun(200)) 
+
+---------------- even or odd=------------------
 
 def ev_od(num):
     if num%2==0:
@@ -113,11 +122,14 @@ def ev_od(num):
 
 ev_od(8) 
 
+-----------calculate area of triangle --------
 
 def area_tri(b,h):
     return 1/2 * b * h
     
 print(area_tri(3,9)) 
+
+-----------------table of given no.--------------------
 
 def mul_table(num):
     m=[]
@@ -128,6 +140,8 @@ def mul_table(num):
     return m
     
 print(mul_table(20))
+
+------------intersection of two list-----------
     
 def str_fun(Country,towns):
     result=[value for value in Country if value in towns]
@@ -137,6 +151,8 @@ def str_fun(Country,towns):
 country=["india",'america','japan','china']
 towns=["pune","mumbai","delhi","india"]
 print(str_fun(country,towns)) 
+
+----------------- leap year or not ------------
 
 def year_check(year):
     if year %100 == 0 and year % 400==0:
