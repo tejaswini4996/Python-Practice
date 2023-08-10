@@ -1,0 +1,150 @@
+'''def tri_recursion(k):
+    if (k>0):
+        result = k+tri_recursion(k-1)
+        print(result)
+    else:
+        result=0
+    return result
+        
+print("")
+tri_recursion(6)
+#print(my_function(5))
+#print(my_function'''
+
+'''
+#areaofcircle
+def area_circle(r):
+    result= 3.14*r**2
+    return result
+    
+print(area_circle(6))'''
+'''
+#prime or not
+
+def my_function(x):
+    if x==1:
+        print('num is not prime')
+    
+    elif x>1:
+        for i in range(2,x):
+            if(x % i) == 0:
+                print("number is not prime")
+                break
+    
+        else:
+            return ("number is prime")
+            
+    else:
+        print('num is not prime')
+        
+print(my_function(29))
+
+
+lis=[1,4,10,12,11,31,77,67]
+prime=[]
+for i in lis:
+    c=0
+    for j in range(1,i):
+        if i%j==0:
+            c+=1
+    if c==1:
+        prime.append(i)
+print(prime)
+
+
+
+def rev_fun(X):
+   #return X[::-1]
+   
+   word = X.split(' ')
+   reverse_sentence= ' '.join(reversed(word))
+   return reverse_sentence
+   
+   
+    
+print(rev_fun(" mummy pappa?")) '''
+'''
+def my_fun(s):
+    if s == s[::-1]:
+        print("palindrome")
+    else:
+        print("not palindrome")
+    
+my_fun('new string')
+my_fun('asa') '''
+
+'''
+
+def fact_rec(num):
+    if num <0:
+        raise ValueError("factorial of num is not defined")
+    elif num ==0:
+        return 1
+    else:
+        return num * fact_rec(num-1)
+        
+num=-1
+print("factorial of" , num, "is", fact_rec(num))'''
+'''
+import math
+
+def sqr_fun(arr):
+    s=[]
+    for i in range(len(arr)):
+        s.append(math.sqrt(arr[i]))
+    return s
+list=[4,8,3,5]
+result = sqr_fun(list)
+print(result)
+    
+    
+    
+ def sqr_fun(num):
+    return num**2 
+    
+
+print(sqr_fun(200)) 
+
+def ev_od(num):
+    if num%2==0:
+        print("num is even")
+    else:
+        print("num is odd")
+
+ev_od(8) 
+
+
+def area_tri(b,h):
+    return 1/2 * b * h
+    
+print(area_tri(3,9)) 
+
+def mul_table(num):
+    m=[]
+    n=1
+    while n<=10:
+        m.append(num*n)
+        n+=1
+    return m
+    
+print(mul_table(20))
+    
+def str_fun(Country,towns):
+    result=[value for value in Country if value in towns]
+    #list(set(Country) & set(towns))
+    return result
+    
+country=["india",'america','japan','china']
+towns=["pune","mumbai","delhi","india"]
+print(str_fun(country,towns)) 
+
+def year_check(year):
+    if year %100 == 0 and year % 400==0:
+        return "leap"
+        
+    elif year % 100 !=0 and year %4==0:
+            return "leap" 
+    else:
+        return "error"
+year=2001      
+print(year_check(year)) '''
