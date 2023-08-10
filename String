@@ -1,0 +1,126 @@
+---------palindrome---------
+def pal_str(string):
+    return string == string[::-1]
+print(pal_str("oyo")) 
+
+#----------vowels count-----
+
+def c_v(word):
+    count =0
+    vowels="aeiouAEIOU"
+    new = len([char for char in word if char in vowels])
+    #for char in word:
+        if char in vowels:
+            count+=1
+    return count
+    return new
+word="Anonymous"
+print(c_v(word))  
+
+
+#------concat lis----------
+
+def word(words):
+    #return " ".join(words)
+    
+    s=' '
+    for i in words:
+        s+=i+" "
+    return s.strip( )
+    
+    
+words=["i",'love',"myself"]
+print(word(words))
+    
+    
+# ------rev string-----
+
+def rev_str(words):
+    return words[::-1]
+words="baba"
+print(rev_str(words)) 
+
+#-------count words-----
+
+def rev_str(words):
+    
+    return len(words)
+    #count=0
+    for i in range(0,len(words)-1):
+        if (words[i] == ' 'and words[i+1].isalpha and (i>0)):
+            count+=1
+        return count
+            
+words="Codes ban rhe hai"
+print(rev_str(words))  
+
+#---------remove vowels----------
+
+
+def rem_vow(words):
+    new=" "
+    vowels="aeiouAEIOU"
+    for i in words:
+        if i not in vowels:
+            new+=i
+        
+    return new
+words="fear out"
+print(rem_vow(words))  
+
+#-----len of longest word in string-----
+
+def long_word(sentence):
+    
+    s=sentence.split()
+    
+    k= sorted(s,key=len)
+    
+    return (k[-1])
+
+sentence="muze lgta thaa coding se dar "
+print(long_word(sentence)) 
+
+#---------sentence in reverse----------
+
+def rev_ord(sentence):
+    new = sentence.split(" " )
+    return " ".join(reversed(new))
+    #return new
+    
+sentence="baghal me chora gaon me dhindora!"   
+print(rev_ord(sentence)) 
+
+#-----------start with vowels----------
+
+def starts_vow(names):
+    count=0
+    vowels='aeiouAEIOU'
+    for i in names:
+        if i[0] in vowels:
+            count+=1
+    return count
+names=["apple","Horse","Null","Oranges"]
+starts_vow(names) 
+
+#------remove duplicates----
+
+def dup_char(name):
+    new=" "
+    for i in name:
+        if i not in new:
+            new+=i
+    #new=name.split(' ')
+    return str(new)
+    
+name="ayan"    
+print(dup_char(name))  
+
+#------word is in sentence or not------
+
+def word_avai(sentence,word):
+    return (word in sentence)
+    
+
+sentence,word=["I am pro coder now","gamer"]
+print(word_avai(sentence,word))
