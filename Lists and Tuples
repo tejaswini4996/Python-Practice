@@ -1,0 +1,55 @@
+#Lists and Tuples
+
+#1 Concat 2 list in 1 
+
+def merge_two(l1,l2):
+    l3=l1+l2
+    return l3
+    
+l1=[2,4,6,8]
+l2=[1,3,5,7]
+print(merge_two(l1,l2)) 
+
+#2 largest and smalletst no 
+
+def search_BorS(l1):
+    o1=max(l1)
+    o2=min(l1)
+    return o1,o2
+    
+l1=[3,5,6,7,9,1]
+print(search_BorS(l1))  
+
+#3 return square of list elements
+
+def sqr(l1):
+    l2=[]
+    for i in range(len(l1)):
+        l2.append(l1[i]**2)
+    return l2
+ 
+l1=[1,2,3,4,5]    
+print(sqr(l1)) 
+
+#4 print common from both list
+
+def sim(l1,l2):
+    l3=[]
+    for i in l1:
+        if i in l2:
+            l3.append(i)
+    return l3
+    
+l1=[2,4,6,7,8,1]
+l2=[2,6,4,7,8,9,3]
+print(sim(l1,l2))   
+
+#5min and max len of word in list 
+
+def min_mmaxx(l1):
+    
+    l2=sorted(l1, key=len)
+    return l2[0],l2[-1]
+        
+l1=["sim","phone","charger",'earphones']
+print(min_mmaxx(l1)) 
